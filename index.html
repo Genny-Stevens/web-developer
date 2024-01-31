@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genevieve Stevens Developer</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!--=============================================== BOOTSTRAP -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  <!-- NAV -->
+  <ul class="nav justify-content-end sticky-top">
+    <li class="nav-item-0">
+      <a class="nav-link" href="index.html">HOME</a>
+    </li>
+    <li class="nav-item-1">
+      <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+    </li>
+    <li class="nav-item-2">
+      <a class="nav-link" href="#about">ABOUT</a>
+    </li>
+    <li class="nav-item-3">
+      <a class="nav-link" href="resume.html">RESUMÈ</a>
+    </li>
+    </li>
+  </ul>
+
+<header>
+    <!-- First container -->
+  <div id="homeScroll">
+  <div class="containerScroll container_solid">
+    <div class="title_wrapper">
+      <h3>Geneveive Stevens</h3>
+      <h1>Creative Developer</h1>
+      <h2>Front-end Developer & UX-UI Designer</h2>
+    </div>
+  </div>
+
+  <!-- Second container -->
+  <div class="containerScroll container_image" aria-hidden="true">
+    <div class="title_wrapper">
+      <h3>Geneveive Stevens</h3>
+      <h1>Creative Developer</h1>
+      <h2>Front-end Developer & UX-UI Designer</h2>
+    </div>
+    </div>
+  </div>
+</div> 
+</header>
+
+<!-- Section 3 -->
+<section id="portfolio">
+  <br>
+  <h3 class="text-center">My Work</h3>
+  <div class="row">
+    <div class="col-lg-4">
+      <a class="port-img" href="https://genny-stevens.github.io/OxygenYogaFitness/" target="_blank"><img src="images/portfolio-img-1.png" alt=""></a>
+      <a class="port-img" href="https://genny-stevens.github.io/StayLeafy/index.html" target="_blank"><img src="images/portfolio-img-4.png" alt=""></a>
+    </div>
+    <div class="col-lg-4">
+      <a class="port-img" href="https://genny-stevens.github.io/HannasPizza/" target="_blank"><img src="images/portfolio-img-2.png" alt=""></a>
+    </div>
+    <div class="col-lg-4 text-center">
+      <a class="port-img" href="https://genny-stevens.github.io/VcanClean/" target="_blank"><img src="images/portfolio-img-3.png" alt="" >
+        <a class="port-img" href="https://kenstevensleveldesign.ca/index.html#1" target="_blank"><img src="images/portfolio-img-5.png" alt=""></a>
+      <!-- <button class="btn btn-dark">View Site</button></a> -->
+    </div>
+  </div>
+  
+</section>
+<!-- Section 4 -->
+<section id="about">
+  <br>
+  <br>
+<div class="row">
+  <div class="col-lg-6">
+<img src="images/headshot-blob.png" alt="Headshot of Genevieve Stevens">
+  </div>
+  <div class="col-lg-6">
+    <h3 id="secFourheader" class="text-center">About</h3>
+    <p>My name is Genevieve Stevens, and I am a passionate and motivated Junior Front-End Web Developer with a keen eye for design and a strong desire to create engaging and intuitive user experiences. Before I pursued web development, I was a musical theatre performer, contemporary dancer, and choreographer with an honors BFA from Toronto Metropolitan University. My journey in web development began during the pandemic when I attended Sheridan’s Front End Web Developer program. Throughout the Sheridan program I fell in love with combining creativity and technology to bring ideas to life. After my developer program, I undertook several projects to hone my skills in creating responsive, visually appealing websites. I have experience working with modern frameworks and libraries such as React and Bootstrap, enabling me to build dynamic and interactive web applications. Beyond coding, I have a strong passion for design and user interface (UI)/user experience (UX) principles. I believe that a seamless and aesthetically pleasing design is essential for user engagement and satisfaction. I thrive in a collaborative environment where creativity and teamwork are encouraged. I am reliable and conscientious with excellent communication and organization skills (providing realistic timelines and innovative options) the last bit is optional. I'm constantly expanding my skill set, staying up-to-date with the latest trends and best practices in the ever-evolving world of front-end development.</p>
+    <div class="text-center">
+    <a href="resume.html"><button class="btn btn-dark">Resumé</button></a>
+  </div>
+  </div>
+</div>
+</section>
+  <!-- ====================================JS=============================== -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <!-- JS PLUGINS -->
+<script>
+  $( document ).ready(function() { 
+    // NAV SCROLLER
+    $(window).scroll(function() {
+        var Scroll = $(window).scrollTop() + 1,
+                    HomeSection = $('#homeScroll').offset().top,
+                    PortfolioSection = $('#portfolio').offset().top,
+                    AboutSection = $('#about').offset().top;
+        if (Scroll >= HomeSection) { 
+            $(".nav-item-0").addClass("active");
+        } else { 
+            $(".nav-item-0").removeClass("active");
+        }
+        if (Scroll >= PortfolioSection) { 
+            $(".nav-item-1").addClass("active");
+                    $(".nav-item-0").removeClass("active");
+        } else {
+            $(".nav-item-1").removeClass("active");
+        }
+            if (Scroll >= AboutSection) {
+            $(".nav-item-2").addClass("active"); 
+                    $(".nav-item-1").removeClass("active");
+                    $(".nav-item-0").removeClass("active"); 
+        } else { 
+            $(".nav-item-2").removeClass("active"); 
+        }
+    });
+    
+    // $().hover(function() {
+
+    // });
+
+  });
+    </script>
+    
+</body>
+</html>

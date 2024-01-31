@@ -1,0 +1,184 @@
+/********************************************************** COLOURS */
+/* 
+DARK TEAL #537880
+LIGHT TEAL #8aa2a6
+BROWNN #31251d
+*/
+/********************************************************** FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap');
+
+h3, h4, h5, a, p, li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700 !important;
+}
+/********************************************************** NAV */
+.nav a{
+  color: #31251d !important;
+  font-weight: 700;
+}
+.nav a:hover {
+  background-color: #31251d;
+  color:#C2A390 !important;
+  border-radius: 30px;
+}
+.active {
+  outline: 3px solid #31251d;
+  border-radius: 30px;
+}
+/********************************************************** SCROLLER */
+header {
+  height: 200vh;
+}
+
+.containerScroll {
+  clip: rect(0, auto, auto, 0);
+  overflow: hidden;
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  width: 100%;
+}
+
+.container_solid {
+  background:#C2A390;
+  top: 0;
+}
+
+.title_wrapper {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.title_wrapper h1{
+  text-align: right;
+  font-size: 64px;
+  text-transform: uppercase;
+  font-family: "Monsterrat", sans-serif;
+  font-weight: 700;
+  padding-right: 30px;
+}
+.title_wrapper h2{
+  text-align: right;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "Monsterrat", sans-serif;
+  font-weight: 700;
+  padding-right: 30px;
+}
+.title_wrapper h3 {
+  text-align: right;
+  padding-right: 30px;
+}
+.container_solid .title_wrapper h1, .container_solid .title_wrapper h2 {
+  background: url(../images/GS_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #31251d;
+}
+
+.container_image {
+  background-image: url(../images/GS_background.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  top: 100vh;
+}
+
+.container_image .title_wrapper h1, .container_image .title_wrapper h2 {
+  color: #31251d;
+}
+
+section {
+  min-height: 100vh;
+  padding: 2em;
+  margin: auto;
+  /* max-width: 800px; */
+}
+
+section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+section p {
+  font-family: "Montserrat" ,sans-serif;
+  font-weight: 200;
+}
+
+/******************************************************* GENERAL  */
+img {
+    width: 100%;
+    height: auto;
+  }
+section {
+    background-color: #dbd3d0;
+  }
+  .port-img img {
+    padding-bottom: 30px;
+  }
+body {
+  margin: 0 !important;
+}
+/******************************************************* PORTFOLIO  */
+#portfolio a {
+  filter: grayscale(100%);
+}
+#portfolio img{
+  filter: opacity(65%);
+}
+#portfolio a:hover{
+  filter: grayscale(0%);
+}
+#portfolio img:hover {
+  filter: opacity(100%);
+}
+
+
+/******************************************************* ABOUT  */
+#secFourheader {
+  font-weight: 700;
+}
+/******************************************************* RESUME PAGE  */
+#resumeHeader {
+  padding: 5px;
+  background-color: #C2A390;
+  margin-top: 20px !important;
+}
+#resbody {
+  background-color:#fbf1eb;
+}
+.res {
+  padding:5px 0px;
+  margin-top: 5px;
+}
+h5 {
+  font-weight: 700 !important;
+}
+#resumeLinks {
+  padding-top: 15px;
+  color: #537880;
+}
+#resumeLinks a {
+  padding: 0 10px;
+  color: #537880;
+  text-decoration: none;
+  font-weight: 700;
+}
+#resumePage {
+  padding: 0 10px;
+}
